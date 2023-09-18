@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Hunyadi Yellow */
+  --hunyadi-yellow-default: #fdc675;
+  --hunyadi-yellow-100: #492c01;
+  --hunyadi-yellow-200: #935902;
+  --hunyadi-yellow-300: #dc8503;
+  --hunyadi-yellow-400: #fca92e;
+  --hunyadi-yellow-500: #fdc675;
+  --hunyadi-yellow-600: #fdd392;
+  --hunyadi-yellow-700: #fedeae;
+  --hunyadi-yellow-800: #fee9c9;
+  --hunyadi-yellow-900: #fff4e4;
+
+  /* Dutch White */
+  --dutch-white-default: #ead6b1;
+  --dutch-white-100: #413011;
+  --dutch-white-200: #836123;
+  --dutch-white-300: #c49134;
+  --dutch-white-400: #d9b571;
+  --dutch-white-500: #ead6b1;
+  --dutch-white-600: #efdfc2;
+  --dutch-white-700: #f3e7d1;
+  --dutch-white-800: #f7efe0;
+  --dutch-white-900: #fbf7f0;
+
+  /* Eerie Black */
+  --eerie-black-default: #202020;
+  --eerie-black-100: #070707;
+  --eerie-black-200: #0d0d0d;
+  --eerie-black-300: #141414;
+  --eerie-black-400: #1b1b1b;
+  --eerie-black-500: #202020;
+  --eerie-black-600: #4e4e4e;
+  --eerie-black-700: #7a7a7a;
+  --eerie-black-800: #a6a6a6;
+  --eerie-black-900: #d3d3d3;
+
+  /* Eerie Black 2 */
+  --eerie-black-2-default: #262626;
+  --eerie-black-2-100: #080808;
+  --eerie-black-2-200: #0f0f0f;
+  --eerie-black-2-300: #171717;
+  --eerie-black-2-400: #1f1f1f;
+  --eerie-black-2-500: #262626;
+  --eerie-black-2-600: #525252;
+  --eerie-black-2-700: #7d7d7d;
+  --eerie-black-2-800: #a8a8a8;
+  --eerie-black-2-900: #d4d4d4;
+
+  --color1: var(--hunyadi-yellow-default);
+  --color2: var(--dutch-white-default);
+  --color3: var(--eerie-black-2-default);
+  --color4: var(--eerie-black-default);
+  --color5: #464646;
+  --color6: #c19451;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-serif;
+  }
+  h2 {
+    @apply text-3xl font-serif mt-4;
+  }
+  h3 {
+    @apply text-base;
+  }
+  .btn {
+    @apply hover:bg-eerie_black-400 text-color1 relative h-12 flex items-center w-12 rounded-full transition duration-300 ease-in-out justify-center;
+  }
+}

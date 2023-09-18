@@ -1,0 +1,78 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      screens: {
+        xxs: '320px',
+        xs: '450px',
+      },
+      fontFamily: {
+        sans: ['var(--font-jakartaSans)'],
+        serif: ['var(--font-flyover)'],
+      },
+      colors: {
+        hunyadi_yellow: {
+          DEFAULT: '#fdc675',
+          100: '#492c01',
+          200: '#935902',
+          300: '#dc8503',
+          400: '#fca92e',
+          500: '#fdc675',
+          600: '#fdd392',
+          700: '#fedeae',
+          800: '#fee9c9',
+          900: '#fff4e4',
+        },
+        dutch_white: {
+          DEFAULT: '#ead6b1',
+          100: '#413011',
+          200: '#836123',
+          300: '#c49134',
+          400: '#d9b571',
+          500: '#ead6b1',
+          600: '#efdfc2',
+          700: '#f3e7d1',
+          800: '#f7efe0',
+          900: '#fbf7f0',
+        },
+        eerie_black: {
+          DEFAULT: '#202020',
+          100: '#070707',
+          200: '#0d0d0d',
+          300: '#141414',
+          400: '#1b1b1b',
+          500: '#202020',
+          600: '#4e4e4e',
+          700: '#7a7a7a',
+          800: '#a6a6a6',
+          900: '#d3d3d3',
+        },
+        eerie_black_2: {
+          DEFAULT: '#262626',
+          100: '#080808',
+          200: '#0f0f0f',
+          300: '#171717',
+          400: '#1f1f1f',
+          500: '#262626',
+          600: '#525252',
+          700: '#7d7d7d',
+          800: '#a8a8a8',
+          900: '#d4d4d4',
+        },
+
+        color1: 'var(--hunyadi-yellow-default)',
+        color2: 'var(--dutch-white-default)',
+        color3: 'var(--eerie-black-2-default)',
+        color4: 'var(--eerie-black-default)',
+        color5: 'var(--color5)',
+        color6: 'var(--color6)',
+      },
+    },
+  },
+  plugins: [],
+};
