@@ -42,7 +42,10 @@ export default function Dialog({ children }) {
           ref={dialogRef}
           className="fixed top-50 left-50 -translate-x-50 -translate-y-50"
         >
-          <Link className="fixed btn top-2 right-2" href={'/#artwork'}>
+          <Link
+            className="fixed btn top-2 right-2 focus:outline outline-1 outline-offset-2 outline-color1"
+            href={'/#artwork'}
+          >
             <LuX fontSize={18} onClick={closeDialog} />
           </Link>
           <div>{children}</div>

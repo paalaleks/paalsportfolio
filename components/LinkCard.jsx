@@ -10,7 +10,9 @@ export default function LinkCard({ icon, title, description, href }) {
         {icon}
         {title}
       </h3>
-      <p className="text-color2 text-sm text-center">{description}</p>
+      <p className="text-color2 text-base xs:text-sm text-center">
+        {description}
+      </p>
     </Link>
   );
 }
