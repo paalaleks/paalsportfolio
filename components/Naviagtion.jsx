@@ -3,7 +3,7 @@ import { FaBlog, FaEnvelope, FaPaintBrush, FaPortrait } from 'react-icons/fa';
 
 const Naviagtion = () => {
   return (
-    <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 mt-6 pl-4">
+    <div className="grid grid-cols-1 xs:grid-cols-2 mt-3 xs:mt-6 pl-4 gap-2">
       <Link
         className="w-full hover:bg-eerie_black-500 cursor-pointer items-center flex flex-col bg-opacity-40 bg-eerie_black-500 rounded-lg p-4 transition duration-300 ease-in-out "
         href="/#artwork"
@@ -25,7 +25,7 @@ const Naviagtion = () => {
         </h3>
 
         <p className="text-color2 text-sm text-center">
-          Review projects I&apos;ve developed.
+          Projects in web development.
         </p>
       </Link>
 
@@ -44,7 +44,7 @@ const Naviagtion = () => {
         className="w-full h-full hover:bg-eerie_black-500 cursor-pointer items-center flex flex-col justify-center bg-opacity-40 bg-eerie_black-500 rounded-lg p-4 transition duration-300 ease-in-out"
         href="/#contact"
       >
-        <h3 className=" font-bold inline-flex items-baseline">
+        <h3 className=" font-bold inline-flex items-center">
           <FaEnvelope className="mr-2" fontSize={14} /> Contact
         </h3>
       </Link>

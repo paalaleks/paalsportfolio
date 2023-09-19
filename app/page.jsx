@@ -13,8 +13,7 @@ export default function Home() {
     <>
       <div className="relative">
         <div className="bg-[url('/roses.png')] bg-repeat-y h-full w-14 z-20 md:bg-[length:53px_155.5px] bg-[length:42.4px_124.4px] absolute top-0 left-0 bg-left-top md:bg-left-bottom" />
-
-        <section className="min-h-screen  flex flex-col justify-center items-center max-w-5xl mx-auto z-20 relative pl-14 pr-12">
+        <section className="min-h-screen h-full flex flex-col justify-center items-center max-w-5xl mx-auto z-20 relative pl-14 pr-12">
           <Image
             className="hidden sm:block pl-2"
             width={716}
@@ -30,7 +29,7 @@ export default function Home() {
             alt="Paal Aleksander hero image"
           />
 
-          <p className="font-sans text-color2 mt-4 text-lg pl-4 text-center max-w-3xl">
+          <p className="font-sans text-color2 mt-2 xs:mt-4 text-lg pl-4 text-center max-w-3xl">
             Howdy! Please take a look at my projects and feel free to reach out
             if you want to get to know me and learn about my work.
           </p>
