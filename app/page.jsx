@@ -39,9 +39,9 @@ export default function Home() {
 
   return (
     <>
-      <section className="min-h-screen max-w-5xl mx-auto flex flex-col items-center justify-center z-20 relative pl-14 pr-12">
+      <section className="z-20 relative pl-14 pr-12">
         <div className="bg-[url('/roses.png')] bg-repeat-y h-full w-14 z-20 md:bg-[length:53px_155.5px] bg-[length:42.4px_124.4px] absolute top-0 left-0 bg-left-top md:bg-left-bottom" />
-        <div>
+        <div className="h-full min-h-screen flex flex-col items-center justify-center max-w-5xl mx-auto ">
           <Image
             className="hidden sm:block pl-2"
             width={716}
@@ -61,20 +61,20 @@ export default function Home() {
             Howdy! Please take a look at my projects and feel free to reach out
             if you want to get to know me and learn about my work.
           </p>
-        </div>
 
-        <div className="grid grid-cols-1 xs:grid-cols-2 mt-6 pl-4 gap-2 self-start">
-          {cards.map((card) => {
-            return (
-              <LinkCard
-                key={card.title}
-                icon={card.icon}
-                title={card.title}
-                description={card.description}
-                href={card.href}
-              />
-            );
-          })}
+          <div className="grid grid-cols-1 xs:grid-cols-2 mt-6 pl-4 gap-2  mx-auto">
+            {cards.map((card) => {
+              return (
+                <LinkCard
+                  key={card.title}
+                  icon={card.icon}
+                  title={card.title}
+                  description={card.description}
+                  href={card.href}
+                />
+              );
+            })}
+          </div>
         </div>
         <Shadow
           positioned={'bottom-0'}
