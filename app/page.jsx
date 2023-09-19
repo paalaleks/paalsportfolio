@@ -39,27 +39,31 @@ export default function Home() {
 
   return (
     <>
-      <section className="min-h-screen max-w-5xl mx-auto flex justify-center flex-col items-center overflow-hidden z-20 relative pl-14 pr-12 py-5">
-        <Image
-          className="hidden sm:block pl-2"
-          width={716}
-          height={245.5}
-          src={'/paal.svg'}
-          alt="Paal Aleksander hero image XL"
-        />
-        <Image
-          className="block sm:hidden"
-          width={445}
-          height={207}
-          src={'/paal_2.svg'}
-          alt="Paal Aleksander hero image"
-        />
+      <section className="min-h-screen max-w-5xl mx-auto flex flex-col items-center justify-center z-20 relative pl-14 pr-12 py-5">
+        <div className="bg-[url('/roses.png')] bg-repeat-y h-full w-14 z-20 md:bg-[length:53px_155.5px] bg-[length:42.4px_124.4px] absolute top-0 left-0 bg-left-top md:bg-left-bottom" />
+        <div>
+          <Image
+            className="hidden sm:block pl-2"
+            width={716}
+            height={245.5}
+            src={'/paal.svg'}
+            alt="Paal Aleksander hero image XL"
+          />
+          <Image
+            className="block sm:hidden"
+            width={445}
+            height={207}
+            src={'/paal_2.svg'}
+            alt="Paal Aleksander hero image"
+          />
 
-        <p className="font-sans text-color2 mt-4 text-lg pl-4 text-center max-w-3xl">
-          Howdy! Please take a look at my projects and feel free to reach out if
-          you want to get to know me and learn about my work.
-        </p>
-        <div className="grid grid-cols-1 xs:grid-cols-2 mt-6 pl-4 gap-2 ">
+          <p className="font-sans text-color2 mt-4 text-lg pl-4 text-center max-w-3xl">
+            Howdy! Please take a look at my projects and feel free to reach out
+            if you want to get to know me and learn about my work.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 xs:grid-cols-2 mt-6 pl-4 gap-2 self-start">
           {cards.map((card) => {
             return (
               <LinkCard
