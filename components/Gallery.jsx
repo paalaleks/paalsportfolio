@@ -63,7 +63,6 @@ const Gallery = () => {
 
   return (
     <>
-      <SectionHeader sectionName="Artwork" />
       <div className="grid grid-cols-2 sm:grid-cols-3 group max-w-6xl mx-auto md:px-16">
         {images.map((image) => {
           return (

@@ -5,15 +5,17 @@ import Link from 'next/link';
 import Footer from './Footer';
 
 const Post = ({ post, blocks }) => {
-  // console.log(blocks.map((block) => block.type));
-  // blocks.map((block) => console.log(block));
-  // console.log(html);
+  // console.log(blocks);
 
-  // console.log(post);
+  const allText = blocks.filter((block) => {
+    if (block.type === 'paragraph') {
+      return block.paragraph.rich_text;
+    }
+  });
 
   return (
     <div className="relative grid grid-flow-row min-h-screen">
-      <div className="max-w-3xl mx-auto ">
+      <div className="max-w-3xl mx-auto">
         <nav className="md:ml-0 ml-2 my-2">
           <Link href={'/#blog'} className="btn">
             <LuArrowLeft fontSize={18} />
@@ -25,21 +27,22 @@ const Post = ({ post, blocks }) => {
           height={750}
           alt={post.properties.Name.title[0].plain_text}
         />
-        <SectionHeader sectionName={post.properties.Name.title[0].plain_text} />
+        <SectionHeader
+          sectionName={post.properties.Name.title[0].plain_text}
+          paddingTop="pt-8"
+          paddingBottom="pb-4"
+        />
 
         <div className="px-8 relative pb-10">
-          <p className="text-color2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            dolores illo quidem nostrum nobis vero, earum voluptate? Debitis
-            dolor aliquam delectus odit laboriosam! Dolor quibusdam
-            reprehenderit debitis, illum officiis enim?
-          </p>
-          <p className="text-color2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            dolores illo quidem nostrum nobis vero, earum voluptate? Debitis
-            dolor aliquam delectus odit laboriosam! Dolor quibusdam
-            reprehenderit debitis, illum officiis enim?
-          </p>
+          {allText.map((block) => {
+            return (
+              <p key={block.id} className="text-color2 text-md leading-6 mb-4">
+                {block.paragraph.rich_text.map((text) => {
+                  return text.plain_text;
+                })}
+              </p>
+            );
+          })}
         </div>
       </div>
       <Footer />

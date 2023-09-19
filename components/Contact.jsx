@@ -1,3 +1,5 @@
+import { LuMail, LuSend } from 'react-icons/lu';
+
 const Contact = () => {
   return (
     <div className="px-12 sm:px-6 lg:px-8 relative z-10">
@@ -31,6 +33,7 @@ const Contact = () => {
                 placeholder="Name"
                 type="text"
                 id="name"
+                required
               />
             </div>
 
@@ -44,6 +47,7 @@ const Contact = () => {
                   placeholder="Email address"
                   type="email"
                   id="email"
+                  required
                 />
               </div>
 
@@ -68,6 +72,7 @@ const Contact = () => {
                 placeholder="Subject"
                 type="text"
                 id="subject"
+                required
               />
             </div>
 
@@ -81,15 +86,17 @@ const Contact = () => {
                 placeholder="Message"
                 rows="8"
                 id="message"
+                required
               ></textarea>
             </div>
 
             <div className="pt-2">
               <button
                 type="submit"
-                className="flex w-full justify-center rounded-lg bg-eerie_black_2-600 px-5 py-3 font-medium text-color1 transition duration-300 ease-in-out focus:outline outline-1 outline-offset-2 outline-color1"
+                className="flex font-bold w-full justify-center items-center rounded-lg bg-eerie_black_2-600 shadow px-5 py-3 text-color1 transition duration-300 ease-in-out focus:outline outline-1 outline-offset-2 outline-color1"
               >
-                Send Enquiry
+                <LuSend className="mr-2" fontSize={15} />
+                Send message
               </button>
             </div>
           </form>
