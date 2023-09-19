@@ -39,9 +39,9 @@ export default function Home() {
 
   return (
     <>
-      <section className="z-20 relative pb-20">
+      <section className="z-20 relative ">
         <div className="bg-[url('/roses.png')] bg-repeat-y min-h-full max-h-full w-14 z-20 md:bg-[length:53px_155.5px] bg-[length:42.4px_124.4px] absolute top-0 left-0 bg-left-top md:bg-left-bottom" />
-        <div className=" max-w-5xl mx-auto pl-10 pr-8 sm:px-10 min-h-screen max-h-screen flex justify-center flex-col items-center">
+        <div className=" max-w-5xl mx-auto pl-10 pr-8 sm:px-10 min-h-screen max-h-screen flex justify-center flex-col items-center py-16">
           <Image
             className="hidden sm:block pl-4"
             width={716}
