@@ -22,6 +22,7 @@ export default async function BlogList() {
         postList.results.map((post) => {
           return (
             <Card
+              id={post.id}
               post={post}
               href={'/blog/' + post.properties.Slug.formula.string}
               key={post.id}

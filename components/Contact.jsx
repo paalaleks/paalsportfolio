@@ -1,4 +1,4 @@
-import { LuMail, LuSend } from 'react-icons/lu';
+import { FaEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -95,7 +95,7 @@ const Contact = () => {
                 type="submit"
                 className="flex font-bold w-full justify-center items-center rounded-lg bg-eerie_black_2-600 shadow px-5 py-3 text-color1 transition duration-300 ease-in-out focus:outline outline-1 outline-offset-2 outline-color1"
               >
-                <LuSend className="mr-2" fontSize={15} />
+                <FaEnvelope className="mr-2" fontSize={15} />
                 Send message
               </button>
             </div>

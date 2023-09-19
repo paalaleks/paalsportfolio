@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Naviagtion from '../components/Naviagtion';
 import Gallery from '../components/Gallery';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
@@ -7,13 +6,42 @@ import SectionHeader from '../components/SectionHeader';
 import BlogList from '../components/BlogList';
 import Shadow from '../components/Shadow';
 import Footer from '@/components/Footer';
+import LinkCard from '@/components/LinkCard';
+import { FaPaintBrush, FaPortrait, FaBlog, FaEnvelope } from 'react-icons/fa';
 
 export default function Home() {
+  const cards = [
+    {
+      icon: <FaPaintBrush className="mr-2" fontSize={14} />,
+      title: 'Artwork',
+      description: 'Artwork over the years.',
+      href: '/#artwork',
+    },
+    {
+      icon: <FaPortrait className="mr-2" fontSize={14} />,
+      title: 'Projects',
+      description: 'Projects in web development.',
+      href: '/#projects',
+    },
+    {
+      icon: <FaBlog className="mr-2" fontSize={14} />,
+      title: 'Blog',
+      description: 'Thoughts and ideas.',
+      href: '/#blog',
+    },
+    {
+      icon: <FaEnvelope className="mr-2" fontSize={14} />,
+      title: 'Contact',
+      description: '',
+      href: '/#contact',
+    },
+  ];
+
   return (
     <>
       <div className="relative">
         <div className="bg-[url('/roses.png')] bg-repeat-y h-full w-14 z-20 md:bg-[length:53px_155.5px] bg-[length:42.4px_124.4px] absolute top-0 left-0 bg-left-top md:bg-left-bottom" />
-        <section className="min-h-screen h-full flex flex-col justify-center items-center max-w-5xl mx-auto z-20 relative pl-14 pr-12 py-5">
+        <section className="min-h-screen h-full max-w-5xl mx-auto flex justify-center flex-col items-center z-20 relative pl-14 pr-12 py-5">
           <Image
             className="hidden sm:block pl-2"
             width={716}
@@ -29,11 +57,22 @@ export default function Home() {
             alt="Paal Aleksander hero image"
           />
 
-          <p className="font-sans text-color2 mt-2 xs:mt-4 text-lg pl-4 text-center max-w-3xl">
+          <p className="font-sans text-color2 mt-4 text-lg pl-4 text-center max-w-3xl">
             Howdy! Please take a look at my projects and feel free to reach out
             if you want to get to know me and learn about my work.
           </p>
-          <Naviagtion />
+          <div className="grid grid-cols-1 xs:grid-cols-2 mt-6 pl-4 gap-2 ">
+            {cards.map((card) => {
+              return (
+                <LinkCard
+                  icon={card.icon}
+                  title={card.title}
+                  description={card.description}
+                  href={card.href}
+                />
+              );
+            })}
+          </div>
         </section>
         <Shadow
           positioned={'bottom-0'}
