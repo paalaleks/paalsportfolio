@@ -65,6 +65,7 @@ export default function Home() {
             {cards.map((card) => {
               return (
                 <LinkCard
+                  key={card.title}
                   icon={card.icon}
                   title={card.title}
                   description={card.description}
