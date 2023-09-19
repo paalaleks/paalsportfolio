@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Card({ href, key, src, alt, name, description, tags }) {
+export default function Card({ href, src, alt, name, description, tags }) {
   return (
-    <Link href={href} key={key} className="cursor-pointer group">
+    <Link href={href} key={name} className="cursor-pointer group">
       <Image
         width={1200}
         height={1200}
