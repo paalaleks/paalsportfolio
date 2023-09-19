@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="min-h-screen max-w-5xl mx-auto flex flex-col items-center justify-center z-20 relative pl-14 pr-12 py-5">
+      <section className="min-h-screen max-w-5xl mx-auto flex flex-col items-center justify-center z-20 relative pl-14 pr-12">
         <div className="bg-[url('/roses.png')] bg-repeat-y h-full w-14 z-20 md:bg-[length:53px_155.5px] bg-[length:42.4px_124.4px] absolute top-0 left-0 bg-left-top md:bg-left-bottom" />
         <div>
           <Image
