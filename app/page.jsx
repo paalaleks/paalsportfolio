@@ -39,30 +39,30 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-[url('/roses.png')] bg-repeat-y h-screen w-14 z-20 md:bg-[length:53px_155.5px] bg-[length:42.4px_124.4px] absolute top-0 left-0 bg-left-top md:bg-left-bottom" />
-      <section className="z-20 relative pl-11 pr-12 overflow-hidden grid min-h-screen max-w-4xl mx-auto">
-        <div className="self-center pl-2 sm:pr-4 sm:pl-6">
+      <section className="z-20 relative ">
+        <div className="bg-[url('/roses.png')] bg-repeat-y h-full w-14 z-20 md:bg-[length:53px_155.5px] bg-[length:42.4px_124.4px] absolute top-0 left-0 bg-left-top md:bg-left-bottom" />
+        <div className="h-full min-h-screen flex flex-col min-h items-center justify-center max-w-5xl mx-auto pl-11 pr-12">
           <Image
-            className="hidden sm:block mx-auto"
+            className="hidden sm:block pl-2"
             width={716}
             height={245.5}
             src={'/paal.svg'}
             alt="Paal Aleksander hero image XL"
           />
           <Image
-            className="block sm:hidden mx-auto"
+            className="block sm:hidden"
             width={445}
             height={207}
             src={'/paal_2.svg'}
             alt="Paal Aleksander hero image"
           />
 
-          <p className="font-sans text-color2 mt-4 text-lg text-center max-w-3xl">
+          <p className="font-sans text-color2 mt-4 text-lg pl-4 text-center max-w-3xl">
             Howdy! Please take a look at my projects and feel free to reach out
             if you want to get to know me and learn about my work.
           </p>
 
-          <div className="grid grid-cols-1 xs:grid-cols-2 mt-6 gap-2  mx-auto">
+          <div className="grid grid-cols-1 xs:grid-cols-2 mt-6 pl-4 gap-2  mx-auto">
             {cards.map((card) => {
               return (
                 <LinkCard
