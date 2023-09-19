@@ -39,8 +39,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="min-h-screen max-w-5xl mx-auto flex justify-center flex-col items-center z-20 relative pl-14 pr-12 py-5">
-        <div className="bg-[url('/roses.png')] bg-repeat-y h-full w-14 z-20 md:bg-[length:53px_155.5px] bg-[length:42.4px_124.4px] absolute top-0 left-0 bg-left-top md:bg-left-bottom" />
+      <section className="min-h-screen max-w-5xl mx-auto flex justify-center flex-col items-center overflow-hidden z-20 relative pl-14 pr-12 py-5">
         <Image
           className="hidden sm:block pl-2"
           width={716}
@@ -73,12 +72,13 @@ export default function Home() {
             );
           })}
         </div>
+        <Shadow
+          positioned={'bottom-0'}
+          gradientDirection={'bg-gradient-to-t'}
+          visible={'block md:hidden'}
+        />
       </section>
-      <Shadow
-        positioned={'bottom-0'}
-        gradientDirection={'bg-gradient-to-t'}
-        visible={'block md:hidden'}
-      />
+
       <div className="relative ">
         <div className="bg-[url('/roses.png')] bg-repeat-y h-full w-14 z-20 md:bg-[length:53px_155.5px] bg-[length:42.4px_124.4px] absolute top-0 left-0 bg-left-top hidden md:block" />
         <section
