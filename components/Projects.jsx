@@ -29,7 +29,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-4 max-w-3xl mx-auto">
+    <div className="grid grid-cols-1 xs:grid-cols-2 gap-y-8 gap-x-4 max-w-3xl mx-auto">
       {projects.map((project) => {
         return (
           <Card

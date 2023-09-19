@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
-const SectionHeader = ({ sectionName, paddingTop, paddingBottom }) => {
+const SectionHeader = ({ sectionName }) => {
   return (
     <div
-      className={`flex items-center justify-center ${paddingTop} ${paddingBottom} relative mx-auto w-max `}
+      className={`flex items-center justify-center pt-16 pb-12 relative mx-auto w-max `}
     >
       <Image
         src={'/page-break.png'}
