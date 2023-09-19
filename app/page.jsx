@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <>
       <section className="z-20 relative min-h-screen ">
-        <div className="bg-[url('/roses.png')] bg-repeat-y h-full w-14 z-20 md:bg-[length:53px_155.5px] bg-[length:42.4px_124.4px] absolute top-0 left-0 bg-left-top md:bg-left-bottom" />
+        <div className="bg-[url('/roses.png')] bg-repeat-y min-h-full max-h-screen w-14 z-20 md:bg-[length:53px_155.5px] bg-[length:42.4px_124.4px] absolute top-0 left-0 bg-left-top md:bg-left-bottom" />
         <div className=" max-w-5xl min-h-screen mx-auto pl-10 pr-8 sm:px-10 flex flex-col justify-center items-center">
           <Image
             className="hidden sm:block pl-4"
