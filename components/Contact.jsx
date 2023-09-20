@@ -23,7 +23,7 @@ const Contact = () => {
         </div>
 
         <div className="rounded-lg lg:col-span-3 lg:p-12">
-          <form action="" className="space-y-2">
+          <form className="space-y-2">
             <div>
               <label className="sr-only" htmlFor="name">
                 Name
@@ -90,7 +90,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <div className="pt-2">
+            <div className="pt-2 pb-2">
               <button
                 type="submit"
                 className="flex font-bold w-full justify-center items-center rounded-lg bg-eerie_black_2-600 shadow px-5 py-3 text-color1 transition duration-300 ease-in-out focus:outline outline-1 outline-offset-2 outline-color1"

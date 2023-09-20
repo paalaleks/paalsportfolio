@@ -57,12 +57,25 @@ export default function Home() {
             alt="Paal Aleksander hero image"
           />
 
-          <p className="font-sans text-color2 mt-4 text-lg pl-4 text-center max-w-3xl">
-            Howdy! Please take a look at my projects and feel free to reach out
-            if you want to get to know me and learn about my work.
+          <p className="font-sans text-color2 mt-2 text-lg pl-4 text-center max-w-3xl">
+            Howdy! I&apos;m Paal Aleksander, a web developer and artist from
+            Telemark, Norway. I&apos;m a trained front-end developer, but I also
+            tend to want to develop full-stack apps. Right now I&apos;m working
+            in{' '}
+            <span className="inline-flex whitespace-nowrap w-fit rounded-full bg-eerie_black-500 px-2.5 py-0.5 text-sm text-color1">
+              Next.js
+            </span>
+            <span className="inline-flex whitespace-nowrap w-fit rounded-full bg-eerie_black-500 px-2.5 py-0.5 text-sm text-color1">
+              Tailwind
+            </span>
+            <span className="inline-flex whitespace-nowrap w-fit rounded-full bg-eerie_black-500 px-2.5 py-0.5 text-sm text-color1">
+              Firebase
+            </span>
+            , but I&apos;m agnostic to the tech stack as long as it&apos;s fun
+            and I can learn something new.
           </p>
 
-          <div className="grid grid-cols-1 xs:grid-cols-2 mt-6 pl-4 gap-2  mx-auto">
+          <div className="grid grid-cols-1 xs:grid-cols-2 mt-4 pl-4 gap-2  mx-auto">
             {cards.map((card) => {
               return (
                 <LinkCard
