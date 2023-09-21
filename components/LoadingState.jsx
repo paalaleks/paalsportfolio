@@ -1,13 +1,11 @@
-import React from 'react';
-
 export default function LoadingState() {
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div class="text-center">
+      <div className="text-center">
         <div role="status">
           <svg
             aria-hidden="true"
-            class="inline w-14 h-14 mr-2 text-color2 animate-spin dark:text-dutch_white-600 fill-hunyadi_yellow-400"
+            className="inline w-14 h-14 mr-2 text-color2 animate-spin dark:text-dutch_white-600 fill-hunyadi_yellow-400"
             viewBox="0 0 100 101"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +19,7 @@ export default function LoadingState() {
               fill="currentFill"
             />
           </svg>
-          <span class="sr-only">Loading...</span>
+          <span classname="sr-only">Loading...</span>
         </div>
       </div>
     </div>

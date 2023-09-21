@@ -8,13 +8,12 @@ export default function Card({ href, src, alt, name, description, tags }) {
         width={1200}
         height={1200}
         src={src}
-        z
         className="group-hover:brightness-110 transition duration-300 ease-in-out"
         alt={alt}
       />
 
       <div className="text-color2 px-4 pb-4 pt-2 mt-2 group-hover:bg-eerie_black-500 group-hover:bg-opacity-60 transition duration-300 ease-in-out">
-        <h2 className="text-color1 m-0 p-0">{name}</h2>z
+        <h2 className="text-color1 m-0 p-0">{name}</h2>
         <span className="mr-1">{description}</span>
         {tags.map((tag) => {
           return (
