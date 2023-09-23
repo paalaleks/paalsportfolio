@@ -4,8 +4,8 @@ import { SiNotion } from 'react-icons/si';
 
 export default function Footer() {
   return (
-    <footer className="mx-auto max-w-lg w-full self-end pb-2 pt-8 xs:pt-0 text-color2">
-      <div className="flex flex-wrap justify-evenly  items-center h-full px-4">
+    <footer className=" self-end mt-4 xs:pt-0 text-color2">
+      <div className="flex flex-wrap justify-evenly items-center h-full px-4 mx-auto max-w-lg w-full py-2">
         <div className="flex justify-around w-28">
           <Link
             href={'https://www.linkedin.com/in/fullstakk/'}

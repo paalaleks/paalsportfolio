@@ -72,6 +72,9 @@
   .btn {
     @apply hover:bg-eerie_black-400 text-color1 relative h-12 flex items-center w-12 rounded-full transition duration-300 ease-in-out justify-center;
   }
+  .link {
+    @apply underline hover:text-hunyadi_yellow-400;
+  }
 
   .flex-container {
     min-height: auto;

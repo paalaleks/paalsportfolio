@@ -9,6 +9,31 @@ import Footer from '@/components/Footer';
 import LinkCard from '@/components/LinkCard';
 import { FaPaintBrush, FaPortrait, FaBlog, FaEnvelope } from 'react-icons/fa';
 
+export const metadata = {
+  openGraph: {
+    title: `Paal's Portfolio`,
+    description:
+      'A window into my world, ideas, and creations through the years.',
+    url: 'https://www.paalsportfolio.no/',
+    siteName: `Paal's Portfolio`,
+    images: [
+      {
+        url: process.env.URL + '/paal.svg',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: process.env.URL + '/paal.svg',
+        width: 1800,
+        height: 1600,
+        alt: 'Telemark me',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+};
+
 export default function Home() {
   const cards = [
     {
@@ -38,7 +63,7 @@ export default function Home() {
   ];
 
   return (
-    <>
+    <div>
       <section className="z-20 relative ">
         <div className="bg-[url('/roses.png')] bg-repeat-y h-full w-14 z-20 md:bg-[length:53px_155.5px] bg-[length:42.4px_124.4px] absolute top-0 left-0 bg-left-top md:bg-left-bottom" />
         <div className=" max-w-5xl mx-auto pl-10 pr-8 sm:px-12 flex justify-center flex-col items-center xs:min-h-screen pt-12 pb-16">
@@ -134,6 +159,6 @@ export default function Home() {
         <Contact />
         <Footer />
       </section>
-    </>
+    </div>
   );
 }
