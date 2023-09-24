@@ -5,7 +5,6 @@ import Footer from './Footer';
 
 const Post = ({ post, blocks }) => {
   const renderBlock = (block) => {
-    console.log(block);
     if (block.type === 'paragraph') {
       return (
         <div key={block.id} className="text-color2 text-md leading-6 mb-4 mx-8">

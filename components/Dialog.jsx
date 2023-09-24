@@ -37,24 +37,17 @@ export default function Dialog({ children }) {
 
   const dialog =
     showDialog === 'y' ? (
-      <div className="relative">
-        <dialog
-          ref={dialogRef}
-          className="fixed top-50 left-50 -translate-x-50 -translate-y-50"
+      <dialog ref={dialogRef} className="min-w-screen min-h-screen ">
+        <Link
+          className="fixed btn top-2 right-2 focus:outline outline-1 outline-offset-2 outline-color1"
+          href={'/#artwork'}
         >
-          <Link
-            className="fixed btn top-2 right-2 focus:outline outline-1 outline-offset-2 outline-color1"
-            href={'/#artwork'}
-          >
-            <LuX fontSize={18} onClick={closeDialog} />
-          </Link>
-          <div>{children}</div>
-        </dialog>
-        <div
-          className="fixed top-0 bottom-0 left-0 right-0 bg-eerie_black_2"
-          onClick={closeDialog}
-        />
-      </div>
+          <LuX fontSize={18} onClick={closeDialog} />
+        </Link>
+        <div className="flex items-center min-h-screen bg-[#222222]">
+          {children}
+        </div>
+      </dialog>
     ) : null;
 
   return dialog;

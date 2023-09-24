@@ -5,7 +5,13 @@ import { fetchPages } from '@/lib/notion';
 export default function page({ params: { id } }) {
   return (
     <Dialog>
-      <Image src={`/${id}`} width={1240} height={1240} alt="bigger version" />
+      <Image
+        src={`/${id}`}
+        width={1240}
+        height={1240}
+        alt="bigger version"
+        className="max-h-screen object-contain py-4"
+      />
     </Dialog>
   );
 }
