@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import Card from './Card';
 
 const Projects = () => {
@@ -35,6 +33,16 @@ const Projects = () => {
       text: `A friend needed a webpage and a logo. We use Notion to make it super easy to upadate the job logg on the go. The webpage is made with Next.js and Tailwind`,
       tag: [{ name: 'Notion' }, { name: 'Next.js' }, { name: 'Tailwind' }],
       link: 'https://www.bevern.no/',
+    },
+    {
+      title: `www.b-d.app`,
+      image: '/bd.png',
+      alt: 'b-d.app',
+      width: 772,
+      height: 772,
+      text: `This page is quite advanced and is made in Next.js, Firebase and Tailwind. This alows us to pair qr codes witha user and add book and author information to each qr. Now your friend can just scan the qr and initaite a book borrow. Everyone can have their own library and borrow books from each other.`,
+      tag: [{ name: 'Firebse' }, { name: 'Next.js' }, { name: 'Tailwind' }],
+      link: 'https://www.b-d.app/',
     },
   ];
 
