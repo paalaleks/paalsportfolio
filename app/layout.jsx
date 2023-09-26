@@ -17,7 +17,7 @@ const jakartaSans = Plus_Jakarta_Sans({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${flyover.variable} ${jakartaSans.variable}`}>
-      <body className="bg-color3 text-color1">{children}</body>
+      <body className="bg-color3 text-color1 font-sans">{children}</body>
     </html>
   );
 }

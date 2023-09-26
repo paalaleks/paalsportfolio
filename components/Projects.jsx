@@ -6,7 +6,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'Rainy Days',
-      url: '/rainydays.png',
+      image: '/rainydays.png',
       alt: 'Rainy Days',
       width: 772,
       height: 772,
@@ -16,15 +16,25 @@ const Projects = () => {
     },
     {
       title: 'Witness the fitness',
-      url: '/witnessthefitness.png',
+      image: '/witnessthefitness.png',
       alt: 'Rainy Days',
       width: 772,
       height: 772,
       text: `This project was made later in the same semester and is also made in
     pure html, css and javascript. I used parcel as a bundler for this
-    project.`,
+    project.(At the moment the project is down)`,
       tag: [{ name: 'Javascript' }, { name: 'Html' }, { name: 'scss' }],
       link: 'https://splendid-selkie-124d56.netlify.app/',
+    },
+    {
+      title: `Bever'n`,
+      image: '/iphoneandipda.png',
+      alt: 'Bevern for ipad and iphone',
+      width: 772,
+      height: 772,
+      text: `A friend needed a webpage and a logo. We use Notion to make it super easy to upadate the job logg on the go. The webpage is made with Next.js and Tailwind`,
+      tag: [{ name: 'Notion' }, { name: 'Next.js' }, { name: 'Tailwind' }],
+      link: 'https://www.bevern.no/',
     },
   ];
 
@@ -36,7 +46,7 @@ const Projects = () => {
             key={project.title}
             href={project.link}
             alt={project.alt}
-            src={project.url}
+            src={project.image}
             name={project.title}
             description={project.text}
             tags={project.tag}
